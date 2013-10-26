@@ -1,5 +1,5 @@
 //
-//  FViewController.h
+//  FAppDelegate.h
 //  FlingUX
 //
 //  Created by Maciek on 22.09.2013.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FViewController : UIViewController
+@interface FUXAppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
 
 @end

@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import "FAppDelegate.h"
+#import "FUXAppDelegate.h"
 
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([FAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([FUXAppDelegate class]));
     }
 }

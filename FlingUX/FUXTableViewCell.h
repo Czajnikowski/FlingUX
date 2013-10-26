@@ -1,5 +1,5 @@
 //
-//  FAppDelegate.h
+//  FUXTableViewCell.h
 //  FlingUX
 //
 //  Created by Maciek on 22.09.2013.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface FUXTableViewCell : UITableViewCell
 
 @end

@@ -6,13 +6,18 @@
 //  Copyright (c) 2013 Fortunity. All rights reserved.
 //
 
-#import "FAppDelegate.h"
+#import "FUXAppDelegate.h"
 
-@implementation FAppDelegate
+#import <DCIntrospect-ARC/DCIntrospect.h>
+
+@implementation FUXAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+#if TARGET_IPHONE_SIMULATOR
+    [[DCIntrospect sharedIntrospector] start];
+#endif
+    
     return YES;
 }
 							

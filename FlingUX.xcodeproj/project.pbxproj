@@ -7,21 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A37C5B19AC0E493CBFBA0D4E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2226A565A6EE4587BB1EE67B /* libPods.a */; };
+		AE02C9F5181BEDE100573BEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5C8A6D17EF1748006084EB /* UIKit.framework */; };
+		AE4804BB181BF4DA00EB0FB6 /* FUXCellLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4804BA181BF4DA00EB0FB6 /* FUXCellLayer.m */; };
 		AE5C8A6A17EF1748006084EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5C8A6917EF1748006084EB /* Foundation.framework */; };
 		AE5C8A6C17EF1748006084EB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5C8A6B17EF1748006084EB /* CoreGraphics.framework */; };
-		AE5C8A6E17EF1748006084EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5C8A6D17EF1748006084EB /* UIKit.framework */; };
 		AE5C8A7417EF1748006084EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE5C8A7217EF1748006084EB /* InfoPlist.strings */; };
 		AE5C8A7617EF1748006084EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5C8A7517EF1748006084EB /* main.m */; };
-		AE5C8A7A17EF1748006084EB /* FAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5C8A7917EF1748006084EB /* FAppDelegate.m */; };
+		AE5C8A7A17EF1748006084EB /* FUXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5C8A7917EF1748006084EB /* FUXAppDelegate.m */; };
 		AE5C8A7D17EF1748006084EB /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE5C8A7B17EF1748006084EB /* Main_iPhone.storyboard */; };
-		AE5C8A8017EF1748006084EB /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE5C8A7E17EF1748006084EB /* Main_iPad.storyboard */; };
-		AE5C8A8317EF1748006084EB /* FViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5C8A8217EF1748006084EB /* FViewController.m */; };
+		AE5C8A8317EF1748006084EB /* FUXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5C8A8217EF1748006084EB /* FUXViewController.m */; };
 		AE5C8A8517EF1748006084EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE5C8A8417EF1748006084EB /* Images.xcassets */; };
 		AE5C8A8C17EF1748006084EB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5C8A8B17EF1748006084EB /* XCTest.framework */; };
 		AE5C8A8D17EF1748006084EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5C8A6917EF1748006084EB /* Foundation.framework */; };
 		AE5C8A8E17EF1748006084EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5C8A6D17EF1748006084EB /* UIKit.framework */; };
 		AE5C8A9617EF1748006084EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE5C8A9417EF1748006084EB /* InfoPlist.strings */; };
 		AE5C8A9817EF1748006084EB /* FlingUXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5C8A9717EF1748006084EB /* FlingUXTests.m */; };
+		AE5C8AA317EF22C4006084EB /* FUXTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5C8AA217EF22C4006084EB /* FUXTableView.m */; };
+		AE5C8AA617EF28C3006084EB /* FUXTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5C8AA517EF28C3006084EB /* FUXTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18630EFE0DDF467A845D4137 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		2226A565A6EE4587BB1EE67B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE4804B9181BF4DA00EB0FB6 /* FUXCellLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUXCellLayer.h; sourceTree = "<group>"; };
+		AE4804BA181BF4DA00EB0FB6 /* FUXCellLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUXCellLayer.m; sourceTree = "<group>"; };
 		AE5C8A6617EF1748006084EB /* FlingUX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlingUX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5C8A6917EF1748006084EB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AE5C8A6B17EF1748006084EB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -43,18 +50,21 @@
 		AE5C8A7317EF1748006084EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AE5C8A7517EF1748006084EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AE5C8A7717EF1748006084EB /* FlingUX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlingUX-Prefix.pch"; sourceTree = "<group>"; };
-		AE5C8A7817EF1748006084EB /* FAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FAppDelegate.h; sourceTree = "<group>"; };
-		AE5C8A7917EF1748006084EB /* FAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FAppDelegate.m; sourceTree = "<group>"; };
+		AE5C8A7817EF1748006084EB /* FUXAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUXAppDelegate.h; sourceTree = "<group>"; };
+		AE5C8A7917EF1748006084EB /* FUXAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUXAppDelegate.m; sourceTree = "<group>"; };
 		AE5C8A7C17EF1748006084EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		AE5C8A7F17EF1748006084EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		AE5C8A8117EF1748006084EB /* FViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FViewController.h; sourceTree = "<group>"; };
-		AE5C8A8217EF1748006084EB /* FViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FViewController.m; sourceTree = "<group>"; };
+		AE5C8A8117EF1748006084EB /* FUXViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FUXViewController.h; sourceTree = "<group>"; };
+		AE5C8A8217EF1748006084EB /* FUXViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FUXViewController.m; sourceTree = "<group>"; };
 		AE5C8A8417EF1748006084EB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AE5C8A8A17EF1748006084EB /* FlingUXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlingUXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5C8A8B17EF1748006084EB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		AE5C8A9317EF1748006084EB /* FlingUXTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlingUXTests-Info.plist"; sourceTree = "<group>"; };
 		AE5C8A9517EF1748006084EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AE5C8A9717EF1748006084EB /* FlingUXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlingUXTests.m; sourceTree = "<group>"; };
+		AE5C8AA117EF22C4006084EB /* FUXTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUXTableView.h; sourceTree = "<group>"; };
+		AE5C8AA217EF22C4006084EB /* FUXTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUXTableView.m; sourceTree = "<group>"; };
+		AE5C8AA417EF28C3006084EB /* FUXTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUXTableViewCell.h; sourceTree = "<group>"; };
+		AE5C8AA517EF28C3006084EB /* FUXTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUXTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,9 +72,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE02C9F5181BEDE100573BEC /* UIKit.framework in Frameworks */,
 				AE5C8A6C17EF1748006084EB /* CoreGraphics.framework in Frameworks */,
-				AE5C8A6E17EF1748006084EB /* UIKit.framework in Frameworks */,
 				AE5C8A6A17EF1748006084EB /* Foundation.framework in Frameworks */,
+				A37C5B19AC0E493CBFBA0D4E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +99,7 @@
 				AE5C8A9117EF1748006084EB /* FlingUXTests */,
 				AE5C8A6817EF1748006084EB /* Frameworks */,
 				AE5C8A6717EF1748006084EB /* Products */,
+				18630EFE0DDF467A845D4137 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +119,7 @@
 				AE5C8A6B17EF1748006084EB /* CoreGraphics.framework */,
 				AE5C8A6D17EF1748006084EB /* UIKit.framework */,
 				AE5C8A8B17EF1748006084EB /* XCTest.framework */,
+				2226A565A6EE4587BB1EE67B /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -114,14 +127,19 @@
 		AE5C8A6F17EF1748006084EB /* FlingUX */ = {
 			isa = PBXGroup;
 			children = (
-				AE5C8A7817EF1748006084EB /* FAppDelegate.h */,
-				AE5C8A7917EF1748006084EB /* FAppDelegate.m */,
+				AE5C8A7817EF1748006084EB /* FUXAppDelegate.h */,
+				AE5C8A7917EF1748006084EB /* FUXAppDelegate.m */,
 				AE5C8A7B17EF1748006084EB /* Main_iPhone.storyboard */,
-				AE5C8A7E17EF1748006084EB /* Main_iPad.storyboard */,
-				AE5C8A8117EF1748006084EB /* FViewController.h */,
-				AE5C8A8217EF1748006084EB /* FViewController.m */,
+				AE5C8A8117EF1748006084EB /* FUXViewController.h */,
+				AE5C8A8217EF1748006084EB /* FUXViewController.m */,
 				AE5C8A8417EF1748006084EB /* Images.xcassets */,
 				AE5C8A7017EF1748006084EB /* Supporting Files */,
+				AE5C8AA117EF22C4006084EB /* FUXTableView.h */,
+				AE5C8AA217EF22C4006084EB /* FUXTableView.m */,
+				AE5C8AA417EF28C3006084EB /* FUXTableViewCell.h */,
+				AE5C8AA517EF28C3006084EB /* FUXTableViewCell.m */,
+				AE4804B9181BF4DA00EB0FB6 /* FUXCellLayer.h */,
+				AE4804BA181BF4DA00EB0FB6 /* FUXCellLayer.m */,
 			);
 			path = FlingUX;
 			sourceTree = "<group>";
@@ -162,9 +180,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AE5C8A9B17EF1748006084EB /* Build configuration list for PBXNativeTarget "FlingUX" */;
 			buildPhases = (
+				B74D612BE63744BCAA86EFC0 /* Check Pods Manifest.lock */,
 				AE5C8A6217EF1748006084EB /* Sources */,
 				AE5C8A6317EF1748006084EB /* Frameworks */,
 				AE5C8A6417EF1748006084EB /* Resources */,
+				863852BA2AA04BE4A6477D6F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,7 +219,7 @@
 		AE5C8A5E17EF1748006084EB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = F;
+				CLASSPREFIX = FUX;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Fortunity;
 				TargetAttributes = {
@@ -232,7 +252,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE5C8A8017EF1748006084EB /* Main_iPad.storyboard in Resources */,
 				AE5C8A8517EF1748006084EB /* Images.xcassets in Resources */,
 				AE5C8A7D17EF1748006084EB /* Main_iPhone.storyboard in Resources */,
 				AE5C8A7417EF1748006084EB /* InfoPlist.strings in Resources */,
@@ -249,14 +268,50 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		863852BA2AA04BE4A6477D6F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B74D612BE63744BCAA86EFC0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AE5C8A6217EF1748006084EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AE5C8A7617EF1748006084EB /* main.m in Sources */,
-				AE5C8A7A17EF1748006084EB /* FAppDelegate.m in Sources */,
-				AE5C8A8317EF1748006084EB /* FViewController.m in Sources */,
+				AE4804BB181BF4DA00EB0FB6 /* FUXCellLayer.m in Sources */,
+				AE5C8A7A17EF1748006084EB /* FUXAppDelegate.m in Sources */,
+				AE5C8A8317EF1748006084EB /* FUXViewController.m in Sources */,
+				AE5C8AA317EF22C4006084EB /* FUXTableView.m in Sources */,
+				AE5C8AA617EF28C3006084EB /* FUXTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +348,6 @@
 				AE5C8A7C17EF1748006084EB /* Base */,
 			);
 			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		AE5C8A7E17EF1748006084EB /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AE5C8A7F17EF1748006084EB /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		AE5C8A9417EF1748006084EB /* InfoPlist.strings */ = {
@@ -390,9 +437,14 @@
 		};
 		AE5C8A9C17EF1748006084EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18630EFE0DDF467A845D4137 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/maciekczarnik/iOS/3.\\ Prototypes/FlingUX/FlingUX/iOS5.1-Framework-Headers",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FlingUX/FlingUX-Prefix.pch";
 				INFOPLIST_FILE = "FlingUX/FlingUX-Info.plist";
@@ -403,9 +455,14 @@
 		};
 		AE5C8A9D17EF1748006084EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18630EFE0DDF467A845D4137 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/maciekczarnik/iOS/3.\\ Prototypes/FlingUX/FlingUX/iOS5.1-Framework-Headers",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FlingUX/FlingUX-Prefix.pch";
 				INFOPLIST_FILE = "FlingUX/FlingUX-Info.plist";
@@ -475,6 +532,7 @@
 				AE5C8A9D17EF1748006084EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE5C8A9E17EF1748006084EB /* Build configuration list for PBXNativeTarget "FlingUXTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +541,7 @@
 				AE5C8AA017EF1748006084EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
