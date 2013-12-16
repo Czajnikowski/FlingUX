@@ -16,7 +16,7 @@ I’m starting with a very simple project, which is showing 30 cells. You can sw
 Known issues:
 ------
 
-Not very often, but application crashes. The problem is taking place between the start of the fling (- (NSIndexPath *)tableView:(UITableView *)tableView targetIndexPathForMoveFromRowAtIndexPath:(NSIndexPath *)sourceIndexPath toProposedIndexPath:(NSIndexPath *)proposedDestinationIndexPath) and landing in destination (- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath).
+Not very often, but application crashes. The problem is taking place between the start of the fling (<code>- tableView:targetIndexPathForMoveFromRowAtIndexPath:toProposedIndexPath:</code>) and landing in destination (<code>- tableView:moveRowAtIndexPath:toIndexPath:</code>).
 
 Development path:
 ------
