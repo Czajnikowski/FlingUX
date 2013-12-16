@@ -7,9 +7,9 @@ Flinging user experience for iOS UITableView.
 Intention
 ------
 
-Basically almost all of the iOS applications uses UITableView component. Many of those offers the possibility to rearrange it’s cells (prioritizing, organizing things). One thing that I really hate about the rearranging of the table view is that I need to move the rearranged cell, and drag it directly to the desired place - sometimes it takes even few seconds until you achieve your goal. Sometimes your goal is just to drop your cell on top, move it slightly up or down, precision isn’t the life or death.
+Basically almost all of the iOS applications uses UITableView component. Many of those offers the possibility to rearrange it's cells (prioritizing, organizing things). Many times I experienced the rearranging of cells uncomfortable. One thing that I really hate about the rearranging of the table view is that I need to move the rearranged cell, and drag it directly to the desired place - sometimes it takes even few seconds until you achieve your goal. Sometimes your goal is just to drop your cell on top, move it slightly up or down, precision isn't the life or death.
 
-My idea is to implement solution, which will enhance rearranging with “fling” gesture.
+My idea is to implement solution, which will enhance rearranging with "fling" gesture.
 
 I’m starting with a very simple project, which is showing 30 cells. You can switch editing mode by long tap on any cell. Sample project include DCIntrospect pod for debug purposes.
 
