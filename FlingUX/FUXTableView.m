@@ -10,4 +10,12 @@
 
 @implementation FUXTableView
 
+//- (UITableViewCell *)cellForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    NSIndexPath* tempIndexPath = indexPath;
+//    NSLog(@"indexPath row: %li, section: %li", (long)tempIndexPath.row, (long)tempIndexPath.section);
+//    
+//    return [super cellForRowAtIndexPath:indexPath];
+//}
+
 @end

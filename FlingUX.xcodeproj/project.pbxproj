@@ -9,13 +9,12 @@
 /* Begin PBXBuildFile section */
 		A37C5B19AC0E493CBFBA0D4E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2226A565A6EE4587BB1EE67B /* libPods.a */; };
 		AE02C9F5181BEDE100573BEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5C8A6D17EF1748006084EB /* UIKit.framework */; };
-		AE4804BB181BF4DA00EB0FB6 /* FUXCellLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4804BA181BF4DA00EB0FB6 /* FUXCellLayer.m */; };
+		AE0F9C111849637F00AFA3E5 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE5C8A7B17EF1748006084EB /* Main_iPhone.storyboard */; };
 		AE5C8A6A17EF1748006084EB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5C8A6917EF1748006084EB /* Foundation.framework */; };
 		AE5C8A6C17EF1748006084EB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5C8A6B17EF1748006084EB /* CoreGraphics.framework */; };
 		AE5C8A7417EF1748006084EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE5C8A7217EF1748006084EB /* InfoPlist.strings */; };
 		AE5C8A7617EF1748006084EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5C8A7517EF1748006084EB /* main.m */; };
 		AE5C8A7A17EF1748006084EB /* FUXAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5C8A7917EF1748006084EB /* FUXAppDelegate.m */; };
-		AE5C8A7D17EF1748006084EB /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE5C8A7B17EF1748006084EB /* Main_iPhone.storyboard */; };
 		AE5C8A8317EF1748006084EB /* FUXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5C8A8217EF1748006084EB /* FUXViewController.m */; };
 		AE5C8A8517EF1748006084EB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE5C8A8417EF1748006084EB /* Images.xcassets */; };
 		AE5C8A8C17EF1748006084EB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE5C8A8B17EF1748006084EB /* XCTest.framework */; };
@@ -40,8 +39,6 @@
 /* Begin PBXFileReference section */
 		18630EFE0DDF467A845D4137 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		2226A565A6EE4587BB1EE67B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE4804B9181BF4DA00EB0FB6 /* FUXCellLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUXCellLayer.h; sourceTree = "<group>"; };
-		AE4804BA181BF4DA00EB0FB6 /* FUXCellLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUXCellLayer.m; sourceTree = "<group>"; };
 		AE5C8A6617EF1748006084EB /* FlingUX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlingUX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE5C8A6917EF1748006084EB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AE5C8A6B17EF1748006084EB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -138,8 +135,6 @@
 				AE5C8AA217EF22C4006084EB /* FUXTableView.m */,
 				AE5C8AA417EF28C3006084EB /* FUXTableViewCell.h */,
 				AE5C8AA517EF28C3006084EB /* FUXTableViewCell.m */,
-				AE4804B9181BF4DA00EB0FB6 /* FUXCellLayer.h */,
-				AE4804BA181BF4DA00EB0FB6 /* FUXCellLayer.m */,
 			);
 			path = FlingUX;
 			sourceTree = "<group>";
@@ -252,8 +247,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE0F9C111849637F00AFA3E5 /* Main_iPhone.storyboard in Resources */,
 				AE5C8A8517EF1748006084EB /* Images.xcassets in Resources */,
-				AE5C8A7D17EF1748006084EB /* Main_iPhone.storyboard in Resources */,
 				AE5C8A7417EF1748006084EB /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,7 +302,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE5C8A7617EF1748006084EB /* main.m in Sources */,
-				AE4804BB181BF4DA00EB0FB6 /* FUXCellLayer.m in Sources */,
 				AE5C8A7A17EF1748006084EB /* FUXAppDelegate.m in Sources */,
 				AE5C8A8317EF1748006084EB /* FUXViewController.m in Sources */,
 				AE5C8AA317EF22C4006084EB /* FUXTableView.m in Sources */,
@@ -448,6 +442,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FlingUX/FlingUX-Prefix.pch";
 				INFOPLIST_FILE = "FlingUX/FlingUX-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -466,6 +461,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FlingUX/FlingUX-Prefix.pch";
 				INFOPLIST_FILE = "FlingUX/FlingUX-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

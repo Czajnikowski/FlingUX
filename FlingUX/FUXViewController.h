@@ -10,7 +10,12 @@
 
 @interface FUXViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
+@property (nonatomic, assign) NSUInteger collectionCapacity;
+@property (nonatomic, strong) NSMutableArray* collection;
+
 @property (nonatomic, assign) BOOL isMoving;
+@property (nonatomic, strong) NSIndexPath* indexPathOfFlingRow;
+@property (nonatomic, assign) BOOL landingIndexPathIsOutsideTheCurrentView;
 
 @property (nonatomic, assign) CGFloat previousYOffset;
 @property (nonatomic, assign) CGFloat currentYOffset;

@@ -14,32 +14,38 @@
 
 @implementation FUXViewController
 
+- (void)viewDidLoad
+{
+    self.collectionCapacity = 30;
+    self.collection = [NSMutableArray arrayWithCapacity:self.collectionCapacity];
+    
+    for (int index = 0; index < self.collectionCapacity; ++index)
+    {
+        [self.collection addObject:[NSNumber numberWithInt:index]];
+    }
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 20;
+    return self.collectionCapacity;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"%i", indexPath.row];
+    cell.textLabel.text = [NSString stringWithFormat:@"%i", [[self.collection objectAtIndex:indexPath.row] intValue]];
     cell.showsReorderControl = YES;
-    
-//    [cell addGestureRecognizer:[[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longTap:)]];
     
     return cell;
 }
 
-- (void)longTap:(UIGestureRecognizer *)recognizer
+- (IBAction)didLongTapCellWithGestureRecognizer:(UIGestureRecognizer *)gestureRecognizer
 {
-    NSInteger tempInteger = recognizer.state;
-    NSLog(@"recognizer.state: %i", tempInteger);
-}
-
-- (IBAction)didLongTapCellWithGestureRecognizer:(id)sender
-{
-    [self.tableView setEditing:YES animated:YES];
+    if (gestureRecognizer.state == UIGestureRecognizerStateBegan)
+    {
+        [self.tableView setEditing:!self.tableView.editing animated:YES];
+    }
 }
 
 - (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -47,38 +53,50 @@
     return UITableViewCellEditingStyleNone;
 }
 
-//  Fling UX
+#pragma mark - FlingUX
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath
 {
-    NSIndexPath* tempIndexPath = destinationIndexPath;
-    NSLog(@"destinationIndexPath row: %i, section: %i", tempIndexPath.row, tempIndexPath.section);
+    id object = [self.collection objectAtIndex:sourceIndexPath.row];
+    [self.collection removeObject:object];
+    [self.collection insertObject:object atIndex:destinationIndexPath.row];
+    
+//    NSLog(@"Cell oficially moved");
+    
+    if (!self.landingIndexPathIsOutsideTheCurrentView)
+    {
+        self.isMoving = NO;
+    }
 }
 
 - (void)tableView:(UITableView *)tableView didEndDisplayingCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (cell == self.movedCell)
     {
+        [cell removeFromSuperview];
+//        NSLog(@"Cell removed from superview");
+        
         [tableView reloadData];
+        
         self.isMoving = NO;
     }
 }
 
 - (NSIndexPath *)tableView:(UITableView *)tableView targetIndexPathForMoveFromRowAtIndexPath:(NSIndexPath *)sourceIndexPath toProposedIndexPath:(NSIndexPath *)proposedDestinationIndexPath
 {
+    NSLog(@"START: %@", NSStringFromSelector(_cmd));
     self.isMoving = YES;
     
-    //  We will measure velocity in px/s
+    //  Velocity in px/s:
     self.currentYOffset = self.movedCell.frame.origin.y;
     self.currentTimeStamp = CACurrentMediaTime();
     
-    CGFloat velocity =  (self.currentYOffset - self.previousYOffset) / (self.currentTimeStamp - self.previousTimeStamp);
+    CGFloat velocityInPxPerSecond =  (self.currentYOffset - self.previousYOffset) / (self.currentTimeStamp - self.previousTimeStamp);
     
     self.previousYOffset = self.currentYOffset;
     self.previousTimeStamp = self.currentTimeStamp;
 
-    //  Now we need to calculate number of cells to skip
-    
-    CGFloat flingLength = velocity / 15 / 22;
+    //  Calculate number of cells to skip. Height of the cell * 4 - empirical value:
+    CGFloat flingLength = velocityInPxPerSecond / (44.0 * 4.0);
     
     NSInteger landingRow = proposedDestinationIndexPath.row + flingLength;
     if (landingRow < 0)
@@ -91,7 +109,14 @@
     }
     
     NSIndexPath* landingIndexPath = [NSIndexPath indexPathForRow:landingRow inSection:proposedDestinationIndexPath.section];
+//    NSIndexPath* tempIndexPath = sourceIndexPath;
+//    NSLog(@"sourceIndexPath row: %li, section: %li", (long)sourceIndexPath.row, (long)sourceIndexPath.section);
+//    tempIndexPath = landingIndexPath;
+//    NSLog(@"landingIndexPath row: %li, section: %li", (long)tempIndexPath.row, (long)tempIndexPath.section);
     
+    self.landingIndexPathIsOutsideTheCurrentView = [tableView.indexPathsForVisibleRows indexOfObject:landingIndexPath] == NSNotFound;
+    
+    NSLog(@"END: %@", NSStringFromSelector(_cmd));
     return landingIndexPath;
 }
 
